@@ -3,4 +3,3 @@ for interation in range(age):
     print("თქვენ ხართ", interation, "წლის")
 
 print("---------------------------------")
-

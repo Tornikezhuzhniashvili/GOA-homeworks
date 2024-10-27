@@ -29,5 +29,3 @@ hobby1 = input("Top 1 ჰობი: ")
 hobby2 = input("Top 2 ჰობი: ")
 hobby3 = input("Top 3 ჰობი: ")
 print("თქვენი სახელი", name, "მშობლის სახელი", parent_name, "საყვარელი ფერი", fav_color, "ფავორიტი მანქანა", fav_car, "Top 1 ჰობი", hobby1, "Top 2 ჰობი", hobby2, "Top 3 ჰობი", hobby3)
-
-
