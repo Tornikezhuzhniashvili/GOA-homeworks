@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/css-icon-37.png" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <section id="nav">
+    <nav>
+        <ul>
+            <li><a href="#Syntax"><button>Syntax Section</button></a></li>
+            <br>
+            <li><a href="#Declaration block"><button>Declaration block Section</button></a></li>
+            <br>
+            <li><a href="#Use"><button>Use Section</button></a></li>
+            <br>
+            <li><a href="#Sources"><button>Sources Section</button></a></li>
+        </ul>
+    </nav>
+  </section>
+    <center>
+      <h1><strong>CSS</strong></h1>
+    </center>
+    <hr />
+    <p>
+      <strong>Cascading Style Sheets (CSS)</strong> is a style sheet language
+      used for specifying the presentation and styling of a document written in
+      a markup language such as HTML or XML (including XML dialects such as SVG,
+      MathML or XHTML). CSS is a cornerstone technology of the World Wide
+      Web, alongside HTML and JavaScript. CSS is designed to enable the
+      separation of content and presentation, including layout, colors, and
+      fonts. This separation can improve content accessibility, since the
+      content can be written without concern for its presentation; provide more
+      flexibility and control in the specification of presentation
+      characteristics; enable multiple web pages to share formatting by
+      specifying the relevant CSS in a separate .css file, which reduces
+      complexity and repetition in the structural content; and enable the .css
+      file to be cached to improve the page load speed between the pages that
+      share the file and its formatting. Separation of formatting and content
+      also makes it feasible to present the same markup page in different styles
+      for different rendering methods, such as on-screen, in print, by voice
+      (via speech-based browser or screen reader), and on Braille-based tactile
+      devices. CSS also has rules for alternate formatting if the content is
+      accessed on a mobile device. The name cascading comes from the
+      specified priority scheme to determine which declaration applies if more
+      than one declaration of a property match a particular element. This
+      cascading priority scheme is predictable. The CSS specifications are
+      maintained by the World Wide Web Consortium (W3C). Internet media type
+      (MIME type) text/css is registered for use with CSS by RFC 2318 (March
+      1998). The W3C operates a free CSS validation service for CSS
+      documents. In addition to HTML, other markup languages support the use
+      of CSS including XHTML, plain XML, SVG, and XUL. CSS is also used in the
+      GTK widget toolkit.
+    </p>
+    <marquee behavior="" direction="left">
+      <img
+        src="../assets/images/CSS3_logo_and_wordmark.svg (1).png"
+        alt="CSS_logo"
+      />
+    </marquee>
+    <br />
+    <section id="Syntax">
+    <h2><strong>Syntax</strong></h2>
+    <center>
+      <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr />
+    <p>
+      CSS has a simple syntax and uses a number of English keywords to specify
+      the names of various style properties.
+    </p>
+    <h2><strong>Style sheet</strong></h2>
+    <p>
+      A style sheet consists of a list of rules. Each rule or rule-set consists
+      of one or more selectors, and a declaration block.
+    </p>
+</section>
+    <h2><strong>Selector</strong></h2>
+    <p>
+      "CSS class" redirects here. For non-CSS use of element classes in HTML,
+      see class attribute (HTML). In CSS, selectors declare which part of the
+      markup a style applies to by matching tags and attributes in the markup
+      itself.
+    </p>
+    <h3><strong>Selector types</strong></h3>
+    <p>Selectors may apply to the following:</p>
+    <ul>
+      <li>all elements of a specific type, e.g. the second-level headers h2</li>
+      <li>elements specified by attribute, in particular:</li>
+      <li>
+        id: an identifier unique within the document, denoted in the selector
+        language by a hash prefix e.g
+      </li>
+      <li>
+        class: an identifier that can annotate multiple elements in a document,
+        denoted by a dot prefix e.g. .classname (the phrase "CSS class",
+        although sometimes used, is a misnomer, as element classes—specified
+        with the HTML class attribute—is a markup feature that is distinct from
+        browsers' CSS subsystem and the related W3C/WHATWG standards work on
+        document styles; see RDF and microformats for the origins of the "class"
+        system of the Web content model)
+      </li>
+      <li>
+        elements depending on how they are placed relative to others in the
+        document tree.
+      </li>
+    </ul>
+    <p>
+      Classes and IDs are case-sensitive, start with letters, and can include
+      alphanumeric characters, hyphens, and underscores. A class may apply to
+      any number of instances of any element. An ID may only be applied to a
+      single element.
+    </p>
+    <marquee behavior="" direction="right">
+      <img src="../assets/images/Пример_кода_на_CSS.jpg" alt="Example of CSS" />
+    </marquee>
+    <section id="Declaration block">
+    <h2><strong>Declaration block</strong></h2>
+    <center>
+      <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr>
+    <p>
+      A declaration block consists of a pair of braces ({}) enclosing a
+      semicolon-separated list of declarations.
+    </p>
+    <h3><strong>Declaration</strong></h3>
+    <p>
+      Each declaration itself consists of a property, a colon (:), and a value.
+      Optional white-space may be around the declaration block, declarations,
+      colons, and semi-colons for readability.
+    </p>
+    <h3><strong>Properties</strong></h3>
+    <p>
+      Properties are specified in the CSS standard. Each property has a set of
+      possible values. Some properties can affect any type of element, and
+      others apply only to particular groups of elements
+    </p>
+    <h3><strong>Values</strong></h3>
+    <p>
+      Values may be keywords, such as "center" or "inherit", or numerical
+      values, such as 200px (200 pixels), 50vw (50 percent of the viewport
+      width) or 80% (80 percent of the parent element's width). Color values can
+      be specified with keywords (e.g. "red"), hexadecimal values (e.g. #FF0000,
+      also abbreviated as #F00), RGB values on a 0 to 255 scale (e.g. rgb(255,
+      0, 0)), RGBA values that specify both color and alpha transparency (e.g.
+      rgba(255, 0, 0, 0.8)), or HSL or HSLA values (e.g. hsl(0 100% 50%), hsl(0
+      100% 50% / 0.8)). Non-zero numeric values representing linear measures
+      must include a length unit, which is either an alphabetic code or
+      abbreviation, as in 200px or 50vw; or a percentage sign, as in 80%. Some
+      units – cm (centimetre); in (inch); mm (millimetre); pc (pica); and pt
+      (point) – are absolute, which means that the rendered dimension does not
+      depend upon the structure of the page; others – em (em); ex (ex) and px
+      (pixel)[clarification needed] – are relative, which means that factors
+      such as the font size of a parent element can affect the rendered
+      measurement. These eight units were a feature of CSS 1 and retained in
+      all subsequent revisions. The proposed CSS Values and Units Module Level 3
+      will, if adopted as a W3C Recommendation, provide seven further length
+      units: ch; Q; rem; vh; vmax; vmin; and vw.
+    </p>
+</section>
+<section id="Use">
+    <h2><strong>Use</strong></h2>
+    <center>
+      <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr>
+    <p>
+      Before CSS, nearly all presentational attributes of HTML documents were
+      contained within the HTML markup. All font colors, background styles,
+      element alignments, borders, and sizes had to be explicitly described,
+      often repeatedly, within the HTML. CSS lets authors move much of that
+      information to another file, the style sheet, resulting in considerably
+      simpler HTML. And additionally, as more and more devices are able to
+      access responsive web pages, different screen sizes and layouts begin to
+      appear. Customizing a website for each device size is costly and
+      increasingly difficult. The modular nature of CSS means that styles can be
+      reused in different parts of a site or even across sites, promoting
+      consistency and efficiency. For example, headings (h1 elements),
+      sub-headings (h2), sub-sub-headings (h3), etc., are defined structurally
+      using HTML. In print and on the screen, choice of font, size, color and
+      emphasis for these elements is presentational. Before CSS, document
+      authors who wanted to assign such typographic characteristics to, say, all
+      h2 headings had to repeat HTML presentational markup for each occurrence
+      of that heading type. This made documents more complex, larger, and more
+      error-prone and difficult to maintain. CSS allows the separation of
+      presentation from structure. CSS can define color, font, text alignment,
+      size, borders, spacing, layout and many other typographic characteristics,
+      and can do so independently for on-screen and printed views. CSS also
+      defines non-visual styles, such as reading speed and emphasis for aural
+      text readers. The W3C has now deprecated the use of all presentational
+      HTML markup.
+    </section>
+    </p>
+    <section id="Sources">
+    <h2><strong>Sources</strong></h2>
+    <center>
+      <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr>
+    <p>
+      CSS, or Cascading Style Sheets, offers a flexible way to style web
+      content, with styles originating from browser defaults, user preferences,
+      or web designers. These styles can be applied inline, within an HTML
+      document, or through external .css files for broader consistency. Not only
+      does this simplify web development by promoting reusability and
+      maintainability, it also improves site performance because styles can be
+      offloaded into dedicated .css files that browsers can cache. Additionally,
+      even if the styles cannot be loaded or are disabled, this separation
+      maintains the accessibility and readability of the content, ensuring that
+      the site is usable for all users, including those with disabilities. Its
+      multi-faceted approach, including considerations for selector specificity,
+      rule order, and media types, ensures that websites are visually coherent
+      and adaptive across different devices and user needs, striking a balance
+      between design intent and user accessibility.
+    </p>
+</section>
+    <img src="../assets/images/sta-je-css.png" alt="CSS" width="300px">
+    <hr>
+    <br>
+    
+    <a href="../index.html"><button>Main Page</button></a>
+    <hr>
+  </body>
+</html>

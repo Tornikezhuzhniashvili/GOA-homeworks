@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="nav">
+    <nav>
+      <ul>
+        <li>
+          <a href="#Definition"><button>Definition Section</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#Usage"><button>Usage Section</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#History"><button>History Section</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#Service granularity"
+            ><button>Service granularity Section</button></a
+          >
+        </li>
+        <br />
+        <li>
+          <a href="#Benefits"><button>Benefits Section</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#Criticism and concerns"
+            ><button>Criticism and concerns Section</button></a
+          >
+        </li>
+        <br />
+        <li>
+          <a href="#Complexities"><button>Complexities Section</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#Best practices"><button>Best practices Section</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#Technologies"><button>Technologies Section</button></a>
+        </li>
+        <br />
+      </ul>
+    </nav>
+</section>
+    <center>
+      <h1>Microservices</h1>
+    </center>
+    <hr />
+    <p>
+      In software engineering, a microservice architecture is an architectural
+      pattern that arranges an application as a collection of loosely coupled,
+      fine-grained services, communicating through lightweight protocols. A
+      microservice-based architecture enables teams to develop and deploy their
+      services independently, reduce code interdependency and increase
+      readability and modularity within a codebase. This is achieved by reducing
+      several dependencies in the codebase, allowing developers to evolve their
+      services with limited restrictions, and reducing additional complexity.
+      Consequently, organizations can develop software with rapid growth and
+      scalability, as well as implement off-the-shelf services more easily.
+      These benefits come with the cost of needing to maintain a decoupled
+      structure within the codebase, which means its initial implementation is
+      more complex than that of a monolithic codebase. Interfaces need to be
+      designed carefully and treated as APIs.
+    </p>
+    <section id="Definition">
+      <h2>Definition</h2>
+    </section>
+    <p>
+      There is no single definition for microservices. A consensus has evolved
+      over time in the industry. Some of the defining characteristics that are
+      frequently cited include:
+    </p>
+    <ul>
+      <li>
+        Services in a microservice architecture are often processes that
+        communicate over a network to fulfill a goal using technology-agnostic
+        protocols such as HTTP.
+      </li>
+      <li>Services are organized around business capabilities</li>
+      <li>
+        Services can be implemented using different programming languages,
+        databases, hardware and software environments, depending on what fits
+        best.
+      </li>
+      <li>
+        Services are small in size, messaging-enabled, bounded by contexts,
+        autonomously developed, independently deployable,[9][8] decentralized
+        and built and released with automated processes.
+      </li>
+      <li>
+        Microservices are a specialization of an implementation approach for
+        service-oriented architectures used to build flexible, independently
+        deployable software systems.
+      </li>
+    </ul>
+    <p>
+      A microservice is not a layer within a monolithic application (for
+      example, the web controller or the backend-for-frontend). Rather, it is a
+      self-contained piece of business functionality with clear interfaces, and
+      may, through its own internal components, implement a layered
+      architecture. From a strategic perspective, microservice architecture
+      essentially follows the Unix philosophy of "Do one thing and do it well".
+      Martin Fowler describes a microservices-based architecture as having the
+      following properties:
+    </p>
+    <ul>
+      <li>
+        Lends itself to a continuous delivery software development process. A
+        change to a small part of the application only requires rebuilding and
+        redeploying only one or a small number of services.
+      </li>
+      <li>
+        Adheres to principles such as fine-grained interfaces (to independently
+        deployable services), business-driven development (e.g. domain-driven
+        design).
+      </li>
+    </ul>
+    <img src="../assets/images/microservice/How-Microservices-architecture-works-1024x786 (1).jpg" alt="microservice" width="350px">
+    <section id="Usage">
+      <h2>Usage</h2>
+    </section>
+    <center>
+        <a href="#nav">Go Back To Navigation</a>
+    </center>
+    
+    <hr />
+    <p>
+      It is common for microservices architectures to be adopted for
+      cloud-native applications, serverless computing, and applications using
+      lightweight container deployment. According to Fowler, because of the
+      large number (when compared to monolithic application implementations) of
+      services, decentralized continuous delivery and DevOps with holistic
+      service monitoring are necessary to effectively develop, maintain, and
+      operate such applications. A consequence of (and rationale for) following
+      this approach is that the individual microservices can be individually
+      scaled. In the monolithic approach, an application supporting three
+      functions would have to be scaled in its entirety even if only one of
+      these functions had a resource constraint. With microservices, only the
+      microservice supporting the function with resource constraints needs to be
+      scaled out, thus providing resource and cost optimization benefits.
+    </p>
+    <img src="../assets/images/microservice/microservices-6.png" alt="microservices-6" width="350px">
+    <section id="History">
+      <h2>History</h2>
+    </section>
+    <center>
+        <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr />
+    <p>
+      In 1999, software developer Peter Rodgers had been working on the Dexter
+      research project at Hewlett Packard Labs, whose aim was to make code less
+      brittle and to make large-scale, complex software systems robust to
+      change. Ultimately this path of research led to the development of
+      resource-oriented computing (ROC), a generalized computation abstraction
+      in which REST is a special subset. In 2005, during a presentation at the
+      Web Services Edge conference, Rodgers argued for "REST-services" and
+      stated that "Software components are Micro-Web-Services... Micro-Services
+      are composed using Unix-like pipelines (the Web meets Unix = true
+      loose-coupling). Services can call services (+multiple language
+      run-times). Complex service assemblies are abstracted behind simple URI
+      interfaces. Any service, at any granularity, can be exposed." He described
+      how a well-designed microservices platform "applies the underlying
+      architectural principles of the Web and REST services together with
+      Unix-like scheduling and pipelines to provide radical flexibility and
+      improved simplicity in service-oriented architectures. Also in 2005,
+      Alistair Cockburn wrote about hexagonal architecture which is a software
+      design pattern that is used along with the microservices. This pattern
+      makes the design of the microservice possible since it isolates in layers
+      the business logic from the auxiliary services needed in order to deploy
+      and run the microservice completely independent from others.
+    </p>
+    <img src="../assets/images/microservice/history_of_microservices.png.crdownload" alt="history_of_microservices" width="380px">
+    <section id="Service granularity">
+      <h2>Service granularity</h2>
+    </section>
+    <center>
+        <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr />
+    <p>
+      A key step in defining a microservice architecture is figuring out how big
+      an individual microservice has to be. There is no consensus or litmus test
+      for this, as the right answer depends on the business and organizational
+      context. For instance, Amazon uses a service-oriented architecture where
+      service often maps 1:1 with a team of 3 to 10 engineers.
+    </p>
+    <p>
+      To find the right level of service granularity, architects have to
+      continuously iterate their component designs with programmers. Architects
+      need to take into account user requirements, responsibilities, and
+      architectural characteristics (aka non-functional requirements).
+    </p>
+    <p>
+      In the context of software architecture, services dedicated to a single
+      task, such as calling a specific backend system or performing a particular
+      calculation, are known as atomic services. Services that call atomic
+      services to consolidate an output are referred to as composite services.
+    </p>
+    <p>
+      It is considered bad practice to make the service too small, as then the
+      runtime overhead and the operational complexity can overwhelm the benefits
+      of the approach. When services become too fine-grained, alternative
+      approaches should be considered, such as packaging the function as a
+      library or integrating it into other microservices.
+    </p>
+    <p>
+      If domain-driven design is being employed in modeling the domain for which
+      the system is being built, then a microservice could be as small as an
+      aggregate or as large as a bounded Context.
+    </p>
+    <p>
+      In the granularity of microservices discussion, there is a spectrum. On
+      one end are the Anaemic Services, which do not have a large number of
+      responsibilities, and on the other end are the Modular Monolith, which are
+      large modules of a system.
+    </p>
+    <section id="Benefits">
+      <h2>Benefits</h2>
+    </section>
+    <center>
+        <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr />
+    <p>
+      The benefit of decomposing an application into different smaller services
+      are numerous:
+    </p>
+    <ul>
+      <li>
+        Modularity: This makes the application easier to understand, develop,
+        test, and become more resilient to architecture erosion. This benefit is
+        often argued in comparison to the complexity of monolithic
+        architectures.
+      </li>
+      <li>
+        Scalability: Since microservices are implemented and deployed
+        independently of each other, i.e. they run within independent processes,
+        they can be monitored and scaled independently.
+      </li>
+      <li>
+        Integration of heterogeneous and legacy systems: microservices are
+        considered a viable means for modernizing existing monolithic software
+        application.[26][27] There are experience reports of several companies
+        who have successfully replaced parts of their existing software with
+        microservices or are in the process of doing so.[28] The process for
+        software modernization of legacy applications is done using an
+        incremental approach.
+      </li>
+      <li>
+        Distributed development: it parallelizes development by enabling small
+        autonomous teams to develop, deploy and scale their respective services
+        independently. It also allows the architecture of an individual service
+        to emerge through continuous refactoring. Microservice-based
+        architectures facilitate continuous integration, continuous delivery and
+        deployment.
+      </li>
+    </ul>
+    <img src="../assets/images/microservice/Benefits-of-a-microservices-architecture-Infographics-2.jpg" alt="Benefits-of-a-microservices-architecture-Infographics-2" width="400px">
+    <section id="Criticism and concerns">
+      <h2>Criticism and concerns</h2>
+    </section>
+    <center>
+        <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr />
+    <p>
+      The microservices approach is subject to criticism for a number of issues:
+    </p>
+    <ul>
+      <li>Services form information barriers.</li>
+      <li>
+        Inter-service calls over a network have a higher cost in terms of
+        network latency and message processing time than in-process calls within
+        a monolithic service process.
+      </li>
+      <li>Testing and deployment are more complicated.</li>
+      <li>
+        Moving responsibilities between services is more difficult. It may
+        involve communication between different teams, rewriting the
+        functionality in another language or fitting it into a different
+        infrastructure. However, microservices can be deployed independently
+        from the rest of the application, while teams working on monoliths need
+        to synchronize to deploy together.
+      </li>
+      <li>
+        Viewing the size of services as the primary structuring mechanism can
+        lead to too many services when the alternative of internal
+        modularization may lead to a simpler design. This requires understanding
+        the overall architecture of the applications and interdependencies
+        between components.
+      </li>
+      <li>
+        Two-phased commits are regarded as an anti-pattern in
+        microservices-based architectures, resulting in a tighter coupling of
+        all the participants within the transaction. However, the lack of this
+        technology causes awkward dances which have to be implemented by all the
+        transaction participants in order to maintain data consistency.
+      </li>
+      <li>
+        Development and support of many services are more challenging if they
+        are built with different tools and technologies - this is especially a
+        problem if engineers move between projects frequently.
+      </li>
+      <li>
+        The protocol typically used with microservices (HTTP) was designed for
+        public-facing services, and as such is unsuitable for working internal
+        microservices that often must be impeccably reliable.
+      </li>
+      <li>
+        While not specific to microservices, the decomposition methodology often
+        uses functional decomposition, which does not handle changes in the
+        requirements while still adding the complexity of services.
+      </li>
+      <li>
+        The very concept of microservice is misleading since there are only
+        services. There is no sound definition of when a service starts or stops
+        being a microservice.
+      </li>
+      <li>
+        Data aggregation. In order to have a full view of a working system, it
+        is required to extract data sets from the microservices repositories and
+        aggregate them into a single schema. For example, to be able to create
+        operational reports that are not possible using a single microservice
+        repository.
+      </li>
+    </ul>
+    <section id="Complexities">
+      <h2>Complexities</h2>
+    </section>
+    <p>
+      The architecture introduces additional complexity and new problems to deal
+      with, such as latency, message format design,
+      backup/availability/consistency (BAC), load balancing and fault tolerance.
+      All of these problems have to be addressed at scale. The complexity of a
+      monolithic application does not disappear if it is re-implemented as a set
+      of microservices. Some of the complexity gets translated into operational
+      complexity. Other places where the complexity manifests itself are
+      increased network traffic and resulting in slower performance. Also, an
+      application made up of any number of microservices has a larger number of
+      interface points to access its respective ecosystem, which increases the
+      architectural complexity. Various organizing principles (such as
+      hypermedia as the engine of application state (HATEOAS), interface and
+      data model documentation captured via Swagger, etc.) have been applied to
+      reduce the impact of such additional complexity.
+    </p>
+    <section id="Best practices">
+      <h2>Best practices</h2>
+    </section>
+    <center>
+        <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr />
+    <p>
+      According to O'Reilly, each microservice should have its own architectural
+      characteristics (a.k.a non functional requirements), and architects should
+      not define uniform characteristics for the entire distributed system.
+    </p>
+    <p>
+      Latency is often measured through "99th percentile" because median and
+      average latencies can be misleading as they can miss outliers.
+    </p>
+    <section id="Technologies">
+      <h2>Technologies</h2>
+    </section>
+    <center>
+        <a href="#nav">Go Back To Navigation</a>
+    </center>
+    <hr />
+    <p>
+      Computer microservices can be implemented in different programming
+      languages and might use different infrastructures. Therefore, the most
+      important technology choices are the way microservices communicate with
+      each other (synchronous, asynchronous, UI integration) and the protocols
+      used for the communication (RESTful HTTP, messaging, GraphQL ...). In a
+      traditional system, most technology choices like the programming language
+      impact the whole system. Therefore, the approach to choosing technologies
+      is quite different.
+    </p>
+    <img src="../assets/images/microservice/Featured-img.jpg" alt="Technologies" width="400px">
+    <hr>
+    <a href="../index.html"><button>Main Page</button></a>
+  </body>
+</html>

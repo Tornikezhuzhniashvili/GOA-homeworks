@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1 id="nav">Navigation</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#spa"><button>Go to Single-page Application</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#history"><button>Go to History</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#ta"><button>Go to Technical Approaches</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#runlog"><button>Go to Running Locally</button></a>
+        </li>
+        <br />
+        <li>
+          <a href="#challanges"
+            ><button>Go to Challenges with the SPA model</button></a
+          >
+        </li>
+        <br />
+        <li>
+          <a href="#page"><button>Go to Page Lifecycle</button></a>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+
+    <center>
+      <h1 id="spa">Single-page application</h1>
+    </center>
+    <p>
+      A single-page application (SPA) is a web application or website that
+      interacts with the user by dynamically rewriting the current web page with
+      new data from the web server, instead of the default method of loading
+      entire new pages. The goal is faster transitions that make the website
+      feel more like a native app. In a SPA, a page refresh never occurs;
+      instead, all necessary HTML, JavaScript, and CSS code is either retrieved
+      by the browser with a single page load, or the appropriate resources are
+      dynamically loaded and added to the page as necessary, usually in response
+      to user actions.
+    </p>
+    <img
+      src="https://miro.medium.com/v2/resize:fit:1400/1*zr1yTjLEsUZB6BkEve8FTA.png"
+      alt="spa"
+      width="400px"
+    />
+    <br />
+    <center>
+      <a href="#nav">Go back to Navigation</a>
+    </center>
+    <br />
+    <hr />
+
+    <h2 id="history">History</h2>
+
+    <p>
+      The origins of the term single-page application are unclear, though the
+      concept was discussed at least as early as 2003 by technology evangelists
+      from Netscape. Stuart Morris, a programming student at Cardiff University,
+      Wales, wrote the self-contained website at slashdotslash.com with the same
+      goals and functions in April 2002, and later the same year Lucas Birdeau,
+      Kevin Hakman, Michael Peachey and Clifford Yeh described a single-page
+      application implementation in US patent 8,136,109. Earlier forms were
+      called rich web applications. JavaScript can be used in a web browser to
+      display the user interface (UI), run application logic, and communicate
+      with a web server. Mature free libraries are available that support the
+      building of a SPA, reducing the amount of JavaScript code developers have
+      to write.
+    </p>
+    <img
+      src="https://www.agileworks.ca/wp-content/uploads/2012/03/Microsoft-SPA1.png"
+      alt="history"
+      width="400px"
+    />
+    <br />
+    <center>
+      <a href="#nav">Go back to Navigation</a>
+    </center>
+    <br />
+    <hr />
+
+    <h2 id="ta">Technical approaches</h2>
+    <p>
+      There are various techniques available that enable the browser to retain a
+      single page even when the application requires server communication.
+    </p>
+
+    <h3>Document hashes</h3>
+
+    <p>
+      HTML authors can leverage element IDs to show or hide different sections
+      of the HTML document. Then, using CSS, authors can use the :target
+      pseudo-class selector to only show the section of the page which the
+      browser navigated to.
+    </p>
+
+    <h3>JavaScript frameworks</h3>
+
+    <p>
+      Web browser JavaScript frameworks and libraries, such as AngularJS,
+      Ember.js, ExtJS, Knockout.js, Meteor.js, React, Vue.js, and Svelte have
+      adopted SPA principles. Aside from ExtJS, all of these are free.
+    </p>
+    <ul>
+      <li>
+        AngularJS is a fully client-side framework. AngularJS's templating is
+        based on bidirectional UI data binding. Data-binding is an automatic way
+        of updating the view whenever the model changes, as well as updating the
+        model whenever the view changes. The HTML template is compiled in the
+        browser. The compilation step creates pure HTML, which the browser
+        re-renders into the live view. The step is repeated for subsequent page
+        views. In traditional server-side HTML programming, concepts such as
+        controller and model interact within a server process to produce new
+        HTML views. In the AngularJS framework, the controller and model states
+        are maintained within the client browser. Therefore, new pages are
+        capable of being generated without any interaction with a server.
+      </li>
+      <li>
+        Angular 2+ is a SPA Framework developed by Google after AngularJS. It is
+        several steps ahead of Angular and there is a strong community of
+        developers using this framework. The framework is updated twice every
+        year. The current version is Angular 18.0.3 (As of June 2024) and new
+        features and fixes are frequently added in this framework.
+      </li>
+      <li>
+        Ember.js is a client-side JavaScript web application framework based on
+        the model–view–controller (MVC) software architectural pattern. It
+        allows developers to create scalable single-page applications by
+        incorporating common idioms and best practices into a framework that
+        provides a rich object model, declarative two-way data binding, computed
+        properties, automatically updating templates powered by Handlebars.js,
+        and a router for managing application state.
+      </li>
+      <li>
+        ExtJS is also a client side framework that allows creating MVC
+        applications. It has its own event system, window and layout management,
+        state management (stores) and various UI components (grids, dialog
+        windows, form elements etc.). It has its own class system with either
+        dynamic or static loader. The application built with ExtJS can either
+        exist on its own (with state in the browser) or with the server (e.g.
+        with REST API that is used to fill its internal stores). ExtJS has only
+        built in capabilities to use localStorage so larger applications need a
+        server to store state.
+      </li>
+      <li>
+        Knockout.js is a client side framework which uses templates based on the
+        Model-View-ViewModel pattern.
+      </li>
+      <li>
+        Meteor.js is a full-stack (client-server) JavaScript framework designed
+        exclusively for SPAs. It features simpler data binding than Angular,
+        Ember or ReactJS, and uses the Distributed Data Protocol and a
+        publish–subscribe pattern to automatically propagate data changes to
+        clients in real-time without requiring the developer to write any
+        synchronization code. Full stack reactivity ensures that all layers,
+        from the database to the templates, update themselves automatically when
+        necessary. Ecosystem packages such as Server Side Rendering address the
+        problem of search engine optimization.
+      </li>
+      <li>
+        React is a JavaScript library for building user interfaces. It is
+        maintained by Facebook, Instagram and a community of individual
+        developers and corporations. React uses a syntax extension for
+        JavaScript, named JSX, which is a mix of JS and HTML (a subset of HTML).
+        Several companies use React with Redux (JavaScript library) which adds
+        state management capabilities, which (with several other libraries) lets
+        developers create complex applications.
+      </li>
+      <li>
+        Vue.js is a JavaScript framework for building user interfaces. Vue
+        developers also provide Pinia for state management.
+      </li>
+      <li>
+        Svelte is a framework for building user interfaces that compiles Svelte
+        code to JavaScript DOM (Document Object Model) manipulations, avoiding
+        the need to bundle a framework to the client, and allowing for simpler
+        application development syntax.
+      </li>
+    </ul>
+    <img
+      src="https://www.stellardigital.in/blog/wp-content/uploads/2022/05/What-are-the-pros-and-cons-of-single-page-applications.jpg"
+      alt="pros-cons"
+      width="400px"
+      <center
+    />
+    <hr />
+    <h3>Ajax</h3>
+
+    <p>
+      As of 2006, the most prominent technique used was Ajax. Ajax involves
+      using asynchronous requests to a server for XML or JSON data, such as with
+      JavaScript's XMLHttpRequest or more modern fetch() (since 2017), or the
+      deprecated ActiveX Object. In contrast to the declarative approach of most
+      SPA frameworks, with Ajax the website directly uses JavaScript or a
+      JavaScript library such as jQuery to manipulate the DOM and edit HTML
+      elements. Ajax has further been popularized by libraries like jQuery,
+      which provides a simpler syntax and normalizes Ajax behavior across
+      different browsers which historically had varying behavior.
+    </p>
+
+    <h3>WebSockets</h3>
+
+    <p>
+      WebSockets are a bidirectional real-time client-server communication
+      technology that are part of the HTML specification. For real-time
+      communication, their use is superior to Ajax in terms of performance and
+      simplicity.
+    </p>
+
+    <h3>Server-sent events</h3>
+
+    <p>
+      Server-sent events (SSEs) is a technique whereby servers can initiate data
+      transmission to browser clients. Once an initial connection has been
+      established, an event stream remains open until closed by the client. SSEs
+      are sent over traditional HTTP and have a variety of features that
+      WebSockets lack by design such as automatic reconnection, event IDs, and
+      the ability to send arbitrary events.
+    </p>
+
+    <h3>Browser plugins</h3>
+
+    <p>
+      Although this method is outdated, asynchronous calls to the server may
+      also be achieved using browser plug-in technologies such as Silverlight,
+      Flash, or Java applets.
+    </p>
+    <img
+      src="https://devopedia.org/images/article/222/6313.1593947497.png"
+      alt="browser"
+      width="400px"
+    />
+    <hr />
+
+    <h3>Data transport (XML, JSON and Ajax)</h3>
+
+    <p>
+      Requests to the server typically result in either raw data (e.g., XML or
+      JSON), or new HTML being returned. In the case where HTML is returned by
+      the server, JavaScript on the client updates a partial area of the DOM
+      (Document Object Model). When raw data is returned, often a client-side
+      JavaScript XML / (XSL) process (and in the case of JSON a template) is
+      used to translate the raw data into HTML, which is then used to update a
+      partial area of the DOM.
+    </p>
+
+    <h3>Server architecture</h3>
+
+    <h4>Thin server architecture</h4>
+    <ul>
+      <li>
+        A SPA moves logic from the server to the client, with the role of the
+        web server evolving into a pure data API or web service. This
+        architectural shift has, in some circles, been coined "Thin Server
+        Architecture" to highlight that complexity has been moved from the
+        server to the client, with the argument that this ultimately reduces
+        overall complexity of the system.
+      </li>
+      <h4>Thick stateful server architecture</h4>
+      <li>
+        The server keeps the necessary state in memory of the client state of
+        the page. In this way, when any request hits the server (usually user
+        actions), the server sends the appropriate HTML and/or JavaScript with
+        the concrete changes to bring the client to the new desired state
+        (usually adding/deleting/updating a part of the client DOM). At the same
+        time, the state in server is updated. Most of the logic is executed on
+        the server, and HTML is usually also rendered on the server. In some
+        ways, the server simulates a web browser, receiving events and
+        performing delta changes in server state which are automatically
+        propagated to client. This approach needs more server memory and server
+        processing, but the advantage is a simplified development model because
+        a the application is usually fully coded in the server, and b data and
+        UI state in the server are shared in the same memory space with no need
+        for custom client/server communication bridges.
+      </li>
+      <h4>Thick stateless server architecture</h4>
+      <li>
+        This is a variant of the stateful server approach. The client page sends
+        data representing its current state to the server, usually through Ajax
+        requests. Using this data, the server is able to reconstruct the client
+        state of the part of the page which needs to be modified and can
+        generate the necessary data or code (for instance, as JSON or
+        JavaScript), which is returned to the client to bring it to a new state,
+        usually modifying the page DOM tree according to the client action that
+        motivated the request. This approach requires that more data be sent to
+        the server and may require more computational resources per request to
+        partially or fully reconstruct the client page state in the server. At
+        the same time, this approach is more easily scalable because there is no
+        per-client page data kept in the server and, therefore, Ajax requests
+        can be dispatched to different server nodes with no need for session
+        data sharing or server affinity.
+      </li>
+    </ul>
+    <img
+      src="https://miro.medium.com/v2/resize:fit:1400/1*UDNTLsNbqVYI284ea3VjDA.png"
+      alt="spa architecture"
+      width="400px"
+    />
+    <hr />
+    <br />
+    <center>
+      <a href="#nav">Go back to Navigation</a>
+    </center>
+    <br />
+    <hr />
+
+    <h2 id="runlog">Running locally</h2>
+
+    <p>
+      Some SPAs may be executed from a local file using the file URI scheme.
+      This gives users the ability to download the SPA from a server and run the
+      file from a local storage device, without depending on server
+      connectivity. If such a SPA wants to store and update data, it must use
+      browser-based Web Storage. These applications benefit from advances
+      available with HTML.
+    </p>
+    <br />
+    <center>
+      <a href="#nav">Go back to Navigation</a>
+    </center>
+    <br />
+    <hr />
+
+    <h2 id="challanges">Challenges with the SPA model</h2>
+
+    <p>
+      Because the SPA is an evolution away from the stateless page-redraw model
+      that browsers were originally designed for, some new challenges have
+      emerged. Possible solutions (of varying complexity, comprehensiveness, and
+      author control) include:
+    </p>
+    <ul>
+      <li>client-side JavaScript libraries</li>
+      <li>server-side web frameworks that specialize in the SPA model</li>
+      <li>
+        the evolution of browsers and the HTML specification, designed for the
+        SPA model
+      </li>
+    </ul>
+
+    <h3>Search-engine optimization</h3>
+
+    <p>
+      Because of the lack of JavaScript execution on crawlers of some popular
+      Web search engines, SEO (search engine optimization) has historically
+      presented a problem for public facing websites wishing to adopt the SPA
+      model. Between 2009 and 2015, Google Webmaster Central proposed and
+      then recommended an "AJAX crawling scheme using an initial exclamation
+      mark in fragment identifiers for stateful AJAX pages (#!). Special
+      behavior must be implemented by the SPA site to allow extraction of
+      relevant metadata by the search engine's crawler. For search engines that
+      do not support this URL hash scheme, the hashed URLs of the SPA remain
+      invisible. These "hash-bang" URIs have been considered problematic by a
+      number of writers including Jeni Tennison at the W3C because they make
+      pages inaccessible to those who do not have JavaScript activated in their
+      browser. They also break HTTP referer headers as browsers are not allowed
+      to send the fragment identifier in the Referer header.In 2015, Google
+      deprecated their hash-bang AJAX crawling proposal. Alternatively,
+      applications may render the first page load on the server and subsequent
+      page updates on the client. This is traditionally difficult, because the
+      rendering code might need to be written in a different language or
+      framework on the server and in the client. Using logic-less templates,
+      cross-compiling from one language to another, or using the same language
+      on the server and the client may help to increase the amount of code that
+      can be shared. In 2018, Google introduced dynamic rendering as another
+      option for sites wishing to offer crawlers a non-JavaScript heavy version
+      of a page for indexing purposes. Dynamic rendering switches between a
+      version of a page that is rendered client-side and a pre-rendered version
+      for specific user agents. This approach involves your web server detecting
+      crawlers (via the user agent) and routing them to a renderer, from which
+      they are then served a simpler version of HTML content. As of 2024, Google
+      no longer recommends dynamic rendering, suggesting "server-side rendering,
+      static rendering, or hydration" instead. Because SEO compatibility is not
+      trivial in SPAs, it is worth noting that SPAs are commonly not used in a
+      context where search engine indexing is either a requirement, or
+      desirable. Use cases include applications that surface private data hidden
+      behind an authentication system. In the cases where these applications are
+      consumer products, often a classic "page redraw" model is used for the
+      applications landing page and marketing site, which provides enough meta
+      data for the application to appear as a hit in a search engine query.
+      Blogs, support forums, and other traditional page redraw artifacts often
+      sit around the SPA that can seed search engines with relevant terms. As of
+      2021 and Google specifically, SEO compatibility for a plain SPA is
+      straightforward and requires just a few simple conditions to be met. One
+      way to increase the amount of code that can be shared between servers and
+      clients is to use a logic-less template language like Mustache or
+      Handlebars. Such templates can be rendered from different host languages,
+      such as Ruby on the server and JavaScript in the client. However, merely
+      sharing templates typically requires duplication of business logic used to
+      choose the correct templates and populate them with data. Rendering from
+      templates may have negative performance effects when only updating a small
+      portion of the page—such as the value of a text input within a large
+      template. Replacing an entire template might also disturb a user's
+      selection or cursor position, where updating only the changed value might
+      not. To avoid these problems, applications can use UI data bindings or
+      granular DOM manipulation to only update the appropriate parts of the page
+      instead of re-rendering entire templates.
+    </p>
+    <img
+      src="https://blog.pshrmn.com/static/img/how-single-page-applications-work/adding-entries.png"
+      alt="sep"
+      width="400px"
+    />
+
+    <h3>Browser history</h3>
+
+    <p>
+      With a SPA being, by definition, "a single page", the model breaks the
+      browser's design for page history navigation using the "forward" or "back"
+      buttons. This presents a usability impediment when a user presses the back
+      button, expecting the previous screen state within the SPA, but instead,
+      the application's single page unloads and the previous page in the
+      browser's history is presented. The traditional solution for SPAs has been
+      to change the browser URL's hash fragment identifier in accord with the
+      current screen state. This can be achieved with JavaScript, and causes URL
+      history events to be built up within the browser. As long as the SPA is
+      capable of resurrecting the same screen state from information contained
+      within the URL hash, the expected back-button behavior is retained. To
+      further address this issue, the HTML specification has introduced
+      pushState and replaceState providing programmatic access to the actual URL
+      and browser history.
+    </p>
+
+    <h3>Analytics</h3>
+
+    <p>
+      Analytics tools such as Google Analytics rely heavily upon entire new
+      pages loading in the browser, initiated by a new page load. SPAs do not
+      work this way. After the first page load, all subsequent page and content
+      changes are handled internally by the application, which should simply
+      call a function to update the analytics package. Failing to call such a
+      function, the browser never triggers a new page load, nothing gets added
+      to the browser history, and the analytics package has no idea who is doing
+      what on the site
+    </p>
+
+    <h3>Security scanning</h3>
+
+    <p>
+      Similarly to the problems encountered with search engine crawlers, DAST
+      tools may struggle with these JavaScript-rich applications. Problems can
+      include the lack of hypertext links, memory usage concerns and resources
+      loaded by the SPA typically being made available by an Application
+      Programming Interface or API. Single-page applications are still subject
+      to the same security risks as traditional web pages such as Cross-Site
+      Scripting (XSS), but also a host of other unique vulnerabilities such as
+      data exposure via API and client-side logic and client-side enforcement of
+      server-side security. In order to effectively scan a single-page
+      application, a DAST scanner must be able to navigate the client-side
+      application in a reliable and repeatable manner to allow discovery of all
+      areas of the application and interception of all requests that the
+      application sends to remote servers (e.g. API requests).
+    </p>
+
+    <h3>Adding page loads to a SPA</h3>
+
+    <p>
+      It is possible to add page load events to a SPA using the HTML History
+      API; this will help integrate analytics. The difficulty comes in managing
+      this and ensuring that everything is being tracked accurately – this
+      involves checking for missing reports and double entries. Some frameworks
+      provide free analytics integrations addressing most of the major analytics
+      providers. Developers can integrate them into the application and make
+      sure that everything is working correctly, but there is no need to do
+      everything from scratch.
+    </p>
+    <img
+      src="https://s3-ap-south-1.amazonaws.com/trt-blog-ghost/2020/06/TRT-Blog-Banner--1--11.png"
+      alt="spavsmpa"
+      width="400px"
+    />
+
+    <h3>Speeding up the page load</h3>
+
+    <p>
+      There are some ways of speeding up the initial load of a SPA, such as
+      selective prerendering of the SPA landing/index page, caching and various
+      code splitting techniques including lazy-loading modules when needed. But
+      it's not possible to get away from the fact that it needs to download the
+      framework, at least some of the application code; and will hit an API for
+      data if the page is dynamic. This is a "pay me now, or pay me later"
+      trade-off scenario. The question of performance and wait-times remains a
+      decision that the developer must make.
+    </p>
+    <br />
+    <center>
+      <a href="#nav">Go back to Navigation</a>
+    </center>
+    <br />
+    <hr />
+
+    <h2 id="page">Page lifecycle</h2>
+
+    <p>
+      A SPA is fully loaded in the initial page load and then page regions are
+      replaced or updated with new page fragments loaded from the server on
+      demand. To avoid excessive downloading of unused features, a SPA will
+      often progressively download more features as they become required, either
+      small fragments of the page, or complete screen modules. In this way an
+      analogy exists between "states" in a SPA and "pages" in a traditional
+      website. Because "state navigation" in the same page is analogous to page
+      navigation, in theory, any page-based web site could be converted to
+      single-page replacing in the same page only the changed parts. The SPA
+      approach on the web is similar to the single-document interface (SDI)
+      presentation technique popular in native desktop applications.
+    </p>
+    <img
+      src="https://vilmate.com/wp-content/uploads/2020/06/Single-page_App_vs_Multi-page_App_-_Infographics_1.jpg"
+      alt="archofspa"
+      width="400px"
+    />
+    <br />
+    <center>
+      <a href="#nav">Go back to Navigation</a>
+    </center>
+    <hr />
+    <a href="../index.html"><button>Main Page</button></a>
+    <br />
+  </body>
+</html>
