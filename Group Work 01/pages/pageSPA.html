@@ -363,57 +363,57 @@
       Because of the lack of JavaScript execution on crawlers of some popular
       Web search engines, SEO (search engine optimization) has historically
       presented a problem for public facing websites wishing to adopt the SPA
-      model. Between 2009 and 2015, Google Webmaster Central proposed and
-      then recommended an "AJAX crawling scheme using an initial exclamation
-      mark in fragment identifiers for stateful AJAX pages (#!). Special
-      behavior must be implemented by the SPA site to allow extraction of
-      relevant metadata by the search engine's crawler. For search engines that
-      do not support this URL hash scheme, the hashed URLs of the SPA remain
-      invisible. These "hash-bang" URIs have been considered problematic by a
-      number of writers including Jeni Tennison at the W3C because they make
-      pages inaccessible to those who do not have JavaScript activated in their
-      browser. They also break HTTP referer headers as browsers are not allowed
-      to send the fragment identifier in the Referer header.In 2015, Google
-      deprecated their hash-bang AJAX crawling proposal. Alternatively,
-      applications may render the first page load on the server and subsequent
-      page updates on the client. This is traditionally difficult, because the
-      rendering code might need to be written in a different language or
-      framework on the server and in the client. Using logic-less templates,
-      cross-compiling from one language to another, or using the same language
-      on the server and the client may help to increase the amount of code that
-      can be shared. In 2018, Google introduced dynamic rendering as another
-      option for sites wishing to offer crawlers a non-JavaScript heavy version
-      of a page for indexing purposes. Dynamic rendering switches between a
-      version of a page that is rendered client-side and a pre-rendered version
-      for specific user agents. This approach involves your web server detecting
-      crawlers (via the user agent) and routing them to a renderer, from which
-      they are then served a simpler version of HTML content. As of 2024, Google
-      no longer recommends dynamic rendering, suggesting "server-side rendering,
-      static rendering, or hydration" instead. Because SEO compatibility is not
-      trivial in SPAs, it is worth noting that SPAs are commonly not used in a
-      context where search engine indexing is either a requirement, or
-      desirable. Use cases include applications that surface private data hidden
-      behind an authentication system. In the cases where these applications are
-      consumer products, often a classic "page redraw" model is used for the
-      applications landing page and marketing site, which provides enough meta
-      data for the application to appear as a hit in a search engine query.
-      Blogs, support forums, and other traditional page redraw artifacts often
-      sit around the SPA that can seed search engines with relevant terms. As of
-      2021 and Google specifically, SEO compatibility for a plain SPA is
-      straightforward and requires just a few simple conditions to be met. One
-      way to increase the amount of code that can be shared between servers and
-      clients is to use a logic-less template language like Mustache or
-      Handlebars. Such templates can be rendered from different host languages,
-      such as Ruby on the server and JavaScript in the client. However, merely
-      sharing templates typically requires duplication of business logic used to
-      choose the correct templates and populate them with data. Rendering from
-      templates may have negative performance effects when only updating a small
-      portion of the page—such as the value of a text input within a large
-      template. Replacing an entire template might also disturb a user's
-      selection or cursor position, where updating only the changed value might
-      not. To avoid these problems, applications can use UI data bindings or
-      granular DOM manipulation to only update the appropriate parts of the page
-      instead of re-rendering entire templates.
+      model. Between 2009 and 2015, Google Webmaster Central proposed and then
+      recommended an "AJAX crawling scheme using an initial exclamation mark in
+      fragment identifiers for stateful AJAX pages (#!). Special behavior must
+      be implemented by the SPA site to allow extraction of relevant metadata by
+      the search engine's crawler. For search engines that do not support this
+      URL hash scheme, the hashed URLs of the SPA remain invisible. These
+      "hash-bang" URIs have been considered problematic by a number of writers
+      including Jeni Tennison at the W3C because they make pages inaccessible to
+      those who do not have JavaScript activated in their browser. They also
+      break HTTP referer headers as browsers are not allowed to send the
+      fragment identifier in the Referer header.In 2015, Google deprecated their
+      hash-bang AJAX crawling proposal. Alternatively, applications may render
+      the first page load on the server and subsequent page updates on the
+      client. This is traditionally difficult, because the rendering code might
+      need to be written in a different language or framework on the server and
+      in the client. Using logic-less templates, cross-compiling from one
+      language to another, or using the same language on the server and the
+      client may help to increase the amount of code that can be shared. In
+      2018, Google introduced dynamic rendering as another option for sites
+      wishing to offer crawlers a non-JavaScript heavy version of a page for
+      indexing purposes. Dynamic rendering switches between a version of a page
+      that is rendered client-side and a pre-rendered version for specific user
+      agents. This approach involves your web server detecting crawlers (via the
+      user agent) and routing them to a renderer, from which they are then
+      served a simpler version of HTML content. As of 2024, Google no longer
+      recommends dynamic rendering, suggesting "server-side rendering, static
+      rendering, or hydration" instead. Because SEO compatibility is not trivial
+      in SPAs, it is worth noting that SPAs are commonly not used in a context
+      where search engine indexing is either a requirement, or desirable. Use
+      cases include applications that surface private data hidden behind an
+      authentication system. In the cases where these applications are consumer
+      products, often a classic "page redraw" model is used for the applications
+      landing page and marketing site, which provides enough meta data for the
+      application to appear as a hit in a search engine query. Blogs, support
+      forums, and other traditional page redraw artifacts often sit around the
+      SPA that can seed search engines with relevant terms. As of 2021 and
+      Google specifically, SEO compatibility for a plain SPA is straightforward
+      and requires just a few simple conditions to be met. One way to increase
+      the amount of code that can be shared between servers and clients is to
+      use a logic-less template language like Mustache or Handlebars. Such
+      templates can be rendered from different host languages, such as Ruby on
+      the server and JavaScript in the client. However, merely sharing templates
+      typically requires duplication of business logic used to choose the
+      correct templates and populate them with data. Rendering from templates
+      may have negative performance effects when only updating a small portion
+      of the page—such as the value of a text input within a large template.
+      Replacing an entire template might also disturb a user's selection or
+      cursor position, where updating only the changed value might not. To avoid
+      these problems, applications can use UI data bindings or granular DOM
+      manipulation to only update the appropriate parts of the page instead of
+      re-rendering entire templates.
     </p>
     <img
       src="https://blog.pshrmn.com/static/img/how-single-page-applications-work/adding-entries.png"
