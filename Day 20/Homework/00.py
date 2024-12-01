@@ -9,5 +9,5 @@ for char in arr:
     if char in vowels:
         vowels_count += 1
 
-print(vowels_count)
+print(vowels_count) 
 
