@@ -1,0 +1,15 @@
+#p1 {
+    background-color: red;
+}
+.p-1 {
+    font-size: xx-large;
+    background-color: #1f2663;
+    
+}
+.p-2 {
+    color: hsl(152, 66%, 32%) .5;
+
+}
+body {
+    background-color: rgb(100, 250, 100);
+}
