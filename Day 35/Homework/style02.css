@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/background/kodala-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.h-1{
+    text-align: center;
+}
+.p-1{
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/background/davit-prf.png),
+    url(./assets/background/goa-bg.jpg),
+    url(./assets/background/monkey-bg.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 50%, 50%, cover;
+    background-position: left, right, top;
+}

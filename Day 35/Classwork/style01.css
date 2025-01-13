@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/background/goa-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-container{
+    background-image: url(./assets/background/davit-prf.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    background-position: -25px ;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid black;
+}

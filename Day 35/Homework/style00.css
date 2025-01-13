@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/background/goa-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.batoni-nika{
+    background-image: url(./assets/background/chad.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -25px;
+    height: 200px;
+    width: 200px;
+    color: lightgreen;
+    text-align: center;
+    font-size: smaller;
+    border-radius: 50%;
+    border: 3px solid;
+}
+.h-1{
+    text-align: center;
+    color: lightgreen;
+    font-size: 70px;
+}
+.p-1{
+    text-align: center;
+    color: lightgreen;
+    font-size: 17px;
+}

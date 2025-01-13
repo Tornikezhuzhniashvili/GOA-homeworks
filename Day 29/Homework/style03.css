@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+.h-1{
+    color: cyan;
+    text-align: center;
+}
+.h-2{
+    color: cyan;
+}
+.p-1{
+    color: cyan;
+}
+.p-2{
+    color: cyan;
+}
+.p-3{
+    color: cyan;
+}
+.p-4{
+    color: cyan;
+}
+.l-1{
+    color: cyan;
+}
+.l-2{
+    color: cyan;
+}
+.l-3{
+    color: cyan;
+}
+.l-4{
+    color: cyan;
+}
+.l-5{
+    color: cyan;
+}
+.nav-1{
+    background-color: black;
+    color: cyan;
+    border-radius: 10px;
+    border-color: cyan;
+}
+.nav-2{
+    background-color: black;
+    color: cyan;
+    border-radius: 10px;
+    border-color: cyan;
+}
