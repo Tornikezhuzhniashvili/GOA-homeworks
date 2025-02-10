@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.box-1 {
+    border: 5px solid green;
+    height: 200px;
+    width: 200px;
+}
+
+.box-2 {
+    border: 5px solid green;
+    height: 200px;
+    width: 200px;
+}
+
+.box-3 {
+    border: 5px solid red;
+    height: 200px;
+    width: 200px;
+}
+
+.box-4 {
+    border: 5px solid red;
+    height: 200px;
+    width: 200px;
+}

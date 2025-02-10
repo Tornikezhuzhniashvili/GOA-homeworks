@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    margin-left: 40px;
+    list-style-image: url(./assets/icons/menu_16dp_00000_FILL0_wght400_GRAD0_opsz20.svg);
+    
+}

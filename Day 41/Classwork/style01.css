@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.h-1{
+    margin-left: 5px;
+}
+table{
+    border: dotted;
+    border-collapse: collapse;
+    margin: 5px;
+    width: 100%;
+    border-color: red;
+}
+th:nth-child(1n){
+    border: dotted;
+    border-color: red;
+    background-color: purple;
+    color: white;
+}
+tr:nth-child(even){
+    border: dotted;
+    border-color: red;
+    background-color: bisque;
+}
+td{
+    border: dotted;
+    border-color: red;
+}

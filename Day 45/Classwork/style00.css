@@ -1,0 +1,16 @@
+body{
+    background-image: linear-gradient(90deg, red, black);
+    height: 100vh;
+    display: flex;
+    align-items: start;
+}
+.text-1{
+    border:2px solid black;
+    display: flex;
+}
+.text-2{
+    border:2px solid black;
+    display: flex;
+    justify-items: start;
+    padding-left: 5px;
+}

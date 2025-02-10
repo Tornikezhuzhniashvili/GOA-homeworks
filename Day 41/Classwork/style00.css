@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    background-image: linear-gradient(90deg, green, black);
+}
+.h-1{
+    text-align: center;
+}
+#link:link{
+    color: black;
+}
+#visited:visited{
+    color: white;
+}
+#active:active{
+    font-size: xx-large;
+}
+#hover:hover{
+    color: darkgreen;
+}
