@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/images/frog/4K-Frog-Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.h-1{
+    text-align: center;
+}
