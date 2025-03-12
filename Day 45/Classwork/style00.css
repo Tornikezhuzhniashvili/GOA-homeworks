@@ -3,6 +3,7 @@ body{
     height: 100vh;
     display: flex;
     align-items: start;
+    
 }
 .text-1{
     border:2px solid black;

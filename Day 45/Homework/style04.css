@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    border: 4px solid rgb(15, 117, 233);
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgb(15, 117, 233) ;
+    color: blue;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+}
