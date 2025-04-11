@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Inconsolata-Bold" ;
+    src: url(../assets/fonts/static/Inconsolata-Bold.ttf);
+}
+@font-face {
+    font-family: "Inconsolata-ExtraBold" ;
+    src: url(../assets/fonts/static/Inconsolata-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Inconsolata-Medium" ;
+    src: url(../assets/fonts/static/Inconsolata-Medium.ttf);
+}
+@font-face {
+    font-family: "Inconsolata-Regular" ;
+    src: url(../assets/fonts/static/Inconsolata-Regular.ttf);
+}
+.font-bold{
+    font-family: "Inconsolata-Bold";
+}
+.font-extrabold{
+    font-family: "Inconsolata-ExtraBold";
+}
+.font-medium{
+    font-family: "Inconsolata-Medium";
+}
+.font-regular{
+    font-family: "Inconsolata-Regular";
+}
+
+/* color text class start */
+.text-neutral{
+    color: hsl(0, 0%, 100%);
+}
+.text-neutral-300{
+    color: hsl(252, 6%, 83%);
+}
+.text-neutral-500{
+    color: hsl(245, 15%, 58%);
+}
+.text-neutral-700{
+    color: hsl(245, 19%, 35%);
+}
+.text-neutral-900{
+    color: hsl(248, 70%, 10%);
+}
+.text-orange-500{
+    color: hsl(7, 88%, 67%) ;
+}
+.text-orange-700{
+    color: hsl(7, 71%, 60%) ;
+}
+
+.linear{
+    background: linear-gradient(hsl(7, 86%, 67%) , hsl(0, 0%, 100%));
+}
+/* colors end */
+
+.bg-neutral{
+    background: hsl(0, 0%, 100%);
+}
+.bg-neutral-300{
+    background: hsl(252, 6%, 83%);
+}
+.bg-neutral-500{
+    background: hsl(245, 15%, 58%);
+}
+.bg-neutral-700{
+    background: hsl(245, 19%, 35%);
+}
+.bg-neutral-900{
+    background: hsl(248, 70%, 10%);
+}
+
+.bg-orange-500{
+    background: hsl(7, 88%, 67%) ;
+}
+.bg-orange-700{
+    background: hsl(7, 71%, 60%) ;
+}
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+.background-img{
+    /*                               xazebi */
+    background: url(../assets/images/pattern-lines.svg) ,
+    /*                      wre  */
+    url(../assets/images/pattern-circle.svg),
+    /*             wre */
+    url(../assets/images/pattern-circle.svg),
+    /*                   klaknili xazi */
+    url(../assets/images/pattern-squiggly-line-top.svg),
+    /*             klaklini bottom */
+    url(../assets/images/pattern-squiggly-line-bottom-desktop.svg),
+    /*                foni */
+    url(../assets/images/background-desktop.png);
+    
+    
+    background-repeat: no-repeat;
+    /*              xazebi   wre  wre  kl   foni*/
+    background-size: cover,  10%, 10% , 25% , 50%  ,cover;
+    /*              xazebi     wre      wre      kl      foni*/
+    background-position:0 , 3vw -8vh, 70vw  50vh,   right 8vh, left bottom  ,0 ;
+    height: 100vh;
+}
+/* text size start */
+.text-xl{
+    font-size:60px ;
+}
+.text-md{
+    font-size:24px ;
+}
+/* text size end */
+
+
+/* text align start */
+.text-center{
+    text-align: center;
+}
+
+
+
+
+
+/* width start */
+.w-xl{
+    max-width: 850px; ;
+}
+/* width end */
+
+input{
+    border: 1px solid hsl(0, 0%, 100%);
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: hsl(248, 70%, 10%, .1) ;
+    border-color: hsl(245, 19%, 35%);
+}
+button{
+    border: 1px solid hsl(7, 88%, 67%) ;
+    color: hsl(248, 70%, 10%);
+    background-color: hsl(7, 88%, 67%);
+    border-radius:8px ; 
+    padding: 12px;
+}
+.gap{
+    gap: 20px;
+}

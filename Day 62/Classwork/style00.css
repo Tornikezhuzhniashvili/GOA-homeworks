@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    height: 100px;
+    max-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    background-color: aqua;
+    animation-name: fadein;
+    animation-duration: 3000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite ;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+@keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        background: #888888 ;
+        transform: scale(1) translateX(-500px) rotateX(100deg) skewX(30deg);
+    }
+    70% {
+        transform: scale(1.5) translateY(200px) rotateY(-100deg) skewY(20deg) ;
+    }
+    80% {
+        background: #dedddd;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.delay-300 {
+    animation-delay: 75ms;
+}
+
+.delay-800 {
+    animation-delay: 100ms;
+}
