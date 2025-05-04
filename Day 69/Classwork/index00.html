@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(62, 190, 255) ;
+        /* add font */
+        font-family: "Roboto", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      ul {
+        list-style-type: none;
+      }
+      /* add ul */
+      header ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      /* add header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      nav button {
+        border-radius: 15px;
+        padding: 8px 15px; /* change padding */
+        background-color: white;
+        color: black;
+        border: none; /* border add */
+        cursor: pointer; /* add cursor */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <!-- delete extra div -->
+      <!-- class delete -->
+      <!-- add anchor tag -->
+      <div>
+        <a href="">sunnyside</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a href="#contact"><button type="button">Contact</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>

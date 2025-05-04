@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: changeColorSize;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        border-radius: 5px;
+      }
+      @keyframes changeColorSize{
+        0%{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        50%{
+            background-color: blue;
+            width: 150px;
+            height: 150px;
+        }
+        100%{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card"></div>
+  </body>
+</html>
