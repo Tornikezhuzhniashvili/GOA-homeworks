@@ -10,31 +10,36 @@
             padding: 0;
             box-sizing: border-box;
         }
-        .card-container{
+        .container{
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
             gap: 20px;
             
         }
-        .card{
+        .box{
+            flex: 1;
+            padding: 40px;
             background-color: red;
             color: white;
-            width: 200px;
-            padding: 20px;
             text-align: center;
             border-radius: 10px;
 
         }
+        @media (max-width: 768px) {
+            .container{
+                flex-direction: column;
+            }
+            
+        }
     </style>
 </head>
 <body>
-    <div class="card-container">
-        <div class="card">card 1</div>
-        <div class="card">card 2</div>
-        <div class="card">card 3</div>
-        <div class="card">card 4</div>
-        <div class="card">card 5</div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
 </body>
 </html>

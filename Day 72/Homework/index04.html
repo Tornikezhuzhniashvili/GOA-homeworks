@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            background-color: cyan;
+            transition: all 0.3s ease;
+        }
+        #myButton {
+           margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <button id="changeButton">clickme</button>
+    <script>
+        const div = document.getElementById("myDiv");
+        const button = document.getElementById("changeButton");
+        div.style.backgroundColor = "red";
+        div.style.width = "100px";
+        div.style.height = "100px";
+    </script>
+</body>
+</html>
