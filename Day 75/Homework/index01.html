@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: poppins, sans-serif;
+        background-color: #f0f0f0;
+      }
+      .group {
+        border: 1px solid black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="group">
+        <label for="name">სახელი</label>
+        <input type="text" id="name" placeholder="შეიყვანეთ თქვენი სახელი" />
+      </div>
+      <div class="group">
+        <label for="email">ემაილი</label>
+        <input type="email" id="email" placeholder="შეიყვანეთ თქვენი ემაილი" />
+      </div>
+      <div class="group">
+        <label for="message">შეტყობინება:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+    </div>
+  </body>
+</html>

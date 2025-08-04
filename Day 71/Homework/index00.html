@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    h1 {
+        position: relative;
+        font-size: 2rem;
+        color: red;
+        margin-bottom: 20px;
+        
+    }
+    h1::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100px;
+        height: 4px;
+        background-color: red;
+        border-radius: 2px;
+    }
+    p {
+        font-size: 1.2rem;
+        color: #333;
+        line-height: 1.5;
+        position: relative;
+    }
+    p::after {
+        content: "✅";
+        font-size: 1.2rem
+    }
+    
+</style>
+</head>
+<body>
+    <h1>
+        heading 1 for example
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quos!</p>
+</body>
+</html>

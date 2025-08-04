@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let months = prompt("რომელია შენი საყვარელი თვე?");
+
+        let season;
+
+        switch (months) {
+            case "იანვარი":
+            case "თებერვალი":
+                season = "ზამთარი";
+                break;
+            case "მარტი":
+                season = "გაზაფხული";
+                break;
+            case "ივნისი":
+                season = "ზაფხული";
+                break;
+            case "სექტემბერი":
+                season = "შემოდგომა";
+                break;
+            default:
+                seasons = ("მიუთითეთ თვე სწორად, თვეები: იანვარი, თებერვალი, მარტი, ივნისი, სექტემბერი");
+                break;
+
+        }
+        alert("თქვენი საყვარელი თვე არის " + months + " და ის მიეკუთვნის " + season + " სეზონს");
+
+    </script>
+</body>
+</html>

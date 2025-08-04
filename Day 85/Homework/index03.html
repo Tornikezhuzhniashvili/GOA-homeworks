@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>დღევანდელი თარიღი და დრო:</h1>
+    <p id="dateInfo"></p>
+    <script>
+        let currentDate = new Date();
+
+        let year = currentDate.getFullYear();
+        let months = currentDate.getMonth() + 1;
+        let dayOfWeek = currentDate.getDay();
+        let day = currentDate.getDate();
+        let hours = currentDate.getHours();
+        
+        let dateText = `წელი: ${year}, თვე: ${months}, კვირის დღე: ${dayOfWeek}, დღე: ${day}, საათი: ${hours}`;
+        document.getElementById("dateInfo").innerHTML = dateText;
+    </script>
+</body>
+</html>

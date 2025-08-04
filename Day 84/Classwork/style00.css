@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue; 
+}
+.sections{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    text-align: center;
+    gap: 30px;
+}
+.section{
+    flex: 1;
+    max-width: 280px;
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.section .icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.section h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.section p {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 1.5;
+}

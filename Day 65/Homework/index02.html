@@ -3,51 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style02.css">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: lightblue;
-            height: 100vh;
-
-        }
-        .card {
-            width: 200px;
-            background-color: white;
-            border-radius: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            padding: 30px;
-
-        }
-        @media (max-width: 768px) {
-            .card {
-                position: relative;
-                top: auto;
-                left: auto;
-                transform: none;
-                width: 100%;
-                max-width: 100%;
-                border-radius: 0;
-            }
-            body {
-                height: auto;
-                padding: 20px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="card">
-        <h2>Central card</h2>
-        <p>This card is centered on the screen.</p>
+    <div class="container">
+        <div class="card">
+            <h2>central card</h2>
+            <p>this card is located in center of the screen </p>
+        </div>
     </div>
 </body>
 </html>
