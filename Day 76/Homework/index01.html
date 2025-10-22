@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const points = [10, 30, 5, 2, 99];
+        console.log("მოცემული მასივი:", points);
+
+        points.push(50);
+        console.log("push(50):", points);
+
+        const last = points.pop();
+        console.log("pop():", points);
+
+        points.unshift(1);
+        console.log("unshift(1):", points);
+
+        const first = points.shift();
+        console.log("shift():", points, "| წაშლილი ელემენტი:", first);
+
+        const joined = points.join(", ");
+        console.log("join(", ")", joined);
+
+        const asString = points.toString();
+        console.log("toString()", asString);
+
+        const morePoints = [200, 300];
+        const combined = points.concat(morePoints);
+        console.log("concat([200,300])", combined);
+    </script>
+</body>
+</html>

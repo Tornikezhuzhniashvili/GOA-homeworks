@@ -1,10 +1,11 @@
 import React from 'react'
-import ButtonUsage from './commponents/ui/button'
+import Counter from './components/Counter'
 
 export default function App() {
   return (
     <div>
-        <ButtonUsage>rame</ButtonUsage>
+      hello world
+      <Counter></Counter>
     </div>
   )
 }

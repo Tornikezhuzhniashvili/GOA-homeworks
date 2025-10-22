@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let score = parseInt(prompt("შეიყვანე ქულა (0-100): "))
+        if (score >= 90 && score <= 100) {
+            alert("შესანიშნავი");
+        } else if (score >= 70 && score <= 89) {
+            alert("კარგი");
+        } else if (score >= 50 && score <= 69) {
+            alert("დამაკმაყოფილებელი");
+        } else if (score >= 0 && score <= 49) {
+            alert("მოხმარებელმა უნდა გაიუმჯობესოს");
+        } else {
+            alert("გთხოვთ შეიყვანოთ ქულა 0-დან 100-მდე!");
+        }
+    </script>
+</body>
+</html>
